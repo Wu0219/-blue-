@@ -1,0 +1,55 @@
+/* main/englishsquare/square.wxss */
+
+.squaremain view{
+    width:80vw ;
+    height:13vh;
+    text-align:center;
+    margin:0 auto;
+    border-radius:10px;
+   
+
+}
+page{
+    background-color:#4AA27F ;
+}
+
+
+.squaremain #bigTree{
+    background-color: #626262;
+    margin-top: 2vh;
+}
+
+.squaremain #englishCorner{
+    background-color: #E0504D;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+}
+
+.squaremain #selfLearningRoom {
+    background-color:#C36592 ;
+    margin-top: 2vh;
+}
+
+.squaremain #bookStore {
+    background-color: #018BBA;
+    margin-top: 4vh;
+}
+
+.squaremain #shop {
+    background-color:#FF9003 ;
+    margin-top: 4vh;
+}
+
+.squaremain .content text{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 13vh;
+}
+
+.squaremain .content {
+    display:flex;
+    flex-direction: column;
+    
+}
+

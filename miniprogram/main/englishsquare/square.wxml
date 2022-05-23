@@ -1,0 +1,31 @@
+<!--main/englishsquare/square.wxml-->
+<view class="squaremain">
+    <view class="content">
+        <view id="bigTree">
+            <text>大榕树</text>
+        </view>
+
+        <view id="englishCorner">
+            <text>英语角</text>
+        </view>
+
+        <view id="selfLearningRoom">
+            <text>自习室</text>
+        </view>
+
+        <view id="bookStore">
+            <text>小书摊</text>
+        </view>
+
+        <view id="shop">
+            <text>商店</text>
+        </view>
+
+    </view>
+
+</view>
+
+<page-meta>
+  <navigation-bar/>
+</page-meta>
+
