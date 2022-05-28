@@ -1,0 +1,65 @@
+<!--main/enroll/enroll.wxml-->
+<view class="background">
+  <view class="login">
+    <text class="title"> 用户注册</text>
+    <text class="logintext">已有帐号？直接登录</text>
+  </view>
+  <view class="input">
+    <input placeholder="请输入手机号" placeholder-class="holders" class="textinputs" type="number"></input>
+  </view>
+  <view class="codeBox">
+    <view class="inputcode">
+      <input placeholder="请输入验证码" placeholder-class="holders" class="textinputs" type="number"></input>
+    </view>
+    <view>
+      <text data-id="2" bindtap="getVerificationCode">{{contantTxt}}</text>
+    </view>
+  </view>
+  <view class="input">
+    <input placeholder="请输入用户名" placeholder-class="holders" class="textinputs" type="text"></input>
+  </view>
+  <view class="inputbox">
+    <view class="inptxt">请选择性别</view>
+    <view class="inpbox">
+      <radio-group bindchange="radioChange_sex" class="inp radiogroup">
+        <view class="radiobox_sex" wx:for="{{sex}}" wx:key="value">
+          <radio value="{{item.id}}" color="#ff0000" checked="{{item.checked}}" />
+          <view class="radiotxt">{{item.value}}</view>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+  <view class="inputbox">
+    <view class="inptxt">请选择注册身份</view>
+    <view class="inpbox">
+      <radio-group bindchange="radioChange_identity" class="inp radiogroup">
+        <view class="radiobox_identity" wx:for="{{identity}}" wx:key="value">
+          <radio value="{{item.id}}" color="#ff0000" checked="{{item.checked}}" />
+          <view class="radiotxt">{{item.value}}</view>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+  <!-- 下拉菜单   -->
+  <view class='menu-po'>
+    <!-- 请选择 -->
+    <view class='menu'>
+      <view class='menu-list'>
+        <view class="{{item.key==menuNums&&openPicker?'menu-nav2':'menu-nav'}}" wx:for="{{ msgList }}" wx:for-index="idx" data-key='{{item.key}}' wx:key="key" data-hi="{{ idx }}" data-name='{{item.name}}' bindtap="menuClick">
+          <text class='menu-text'>{{ item.name }}</text>
+          <image class='menu-image' src='/images/gobottom.png'></image>
+        </view>
+      </view>
+    </view>
+    <!-- 列表栏 -->
+    <view class='menu-if'>
+      <!-- 区域 -->
+      <view class="meun-txt over-auto" hidden='{{ meunShow[0].isShows ? true : false }}'>
+        <scroll-view scroll-y="true" style="height: 446rpx">
+          <text wx:for="{{ sousuoList }}" data-id="{{item.id}}" class='meun-city-txt meun-city-txt-price' bindtap='souSearch' data-name='{{item.name}}'>{{ item.name }}</text>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <view class="click">下一步</view>
+</view>
