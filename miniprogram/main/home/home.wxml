@@ -1,0 +1,14 @@
+<!--main/home/home.wxml-->
+<block>
+  <view class="container">
+  <image class="touxiang"></image>
+  <text class="id"></text>
+  <text class="lv"></text>
+  <text class="uni"></text>
+  <text class="jifen"></text>
+  <text class="fol"></text>
+  </view>
+</block>
+<view class="">我的收藏</view>
+<view>我的快递</view>
+<view>设置</view>

@@ -1,0 +1,5 @@
+/* main/home/home.wxss */
+container {
+    background-color: white;
+    padding: 750rpx;
+}

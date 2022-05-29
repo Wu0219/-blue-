@@ -1,28 +1,58 @@
 {
-  "pages": [
-    "main/englishsquare/square",
-    "pages/index/index",
-    "pages/getOpenId/index",
-    "pages/getMiniProgramCode/index",
-    "pages/deployService/index",
-    "pages/createCollection/index",
-    "pages/uploadFile/index",
-    "pages/selectRecord/index",
-    "pages/updateRecord/index",
-    "pages/updateRecordResult/index",
-    "pages/updateRecordSuccess/index",
-    "pages/sumRecord/index",
-    "pages/sumRecordResult/index"
+    "pages": [
+        "main/home/home",
+        "main/englishsquare/square",
+        "main/mess/mess",
 
-    
-  ],
-  "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
-    
-  },
-  "style": "v2",
-  "sitemapLocation": "sitemap.json"
+        "main/setting/setting",
+        "main/pasaword/pasaword",
+        "main/name/name",
+        "main/collect/collect",
+        "main/deliver/deliver",
+        "pages/index/index",
+        "pages/getOpenId/index",
+        "pages/getMiniProgramCode/index",
+        "pages/deployService/index",
+        "pages/createCollection/index",
+        "pages/uploadFile/index",
+        "pages/selectRecord/index",
+        "pages/updateRecord/index",
+        "pages/updateRecordResult/index",
+        "pages/updateRecordSuccess/index",
+        "pages/sumRecord/index",
+        "pages/sumRecordResult/index"
+
+
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "Weixin",
+        "navigationBarTextStyle": "black"
+
+    },
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "main/englishsquare/square",
+                "text": "英语广场",
+                "iconPath": "/images/square.png",
+                "selectedIconPath": "/images/square-act.png"
+            },
+            {
+                "pagePath": "main/mess/mess",
+                "text": "消息",
+                "iconPath": "/images/message.png",
+                "selectedIconPath": "/images/message-act.png"
+            },
+            {
+                "pagePath": "main/home/home",
+                "text": "我的",
+                "iconPath": "/images/mine.png",
+                "selectedIconPath": "/images/mine-act.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
 }
