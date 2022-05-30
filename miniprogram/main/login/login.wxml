@@ -1,2 +1,31 @@
 <!--main/login/login.wxml-->
-<text>main/login/login.wxml</text>
+<view class="background">
+  <view class="login">
+    <text class="title"> 账号登录</text>
+    <text class="logintext" bindtap="goback">还没有账号？点我注册</text>
+  </view>
+  <view class="input">
+    <input id="phonenumber" placeholder="请输入手机号" placeholder-class="holders" class="textinputs" type="number" bindinput="userphoneinput"></input>
+  </view>
+  <view class="codeBox">
+    <view class="inputcode">
+      <input id="verifycode" placeholder="请输入验证码" placeholder-class="holders" class="textinputs" type="number" bindinput="verifycodeinput"></input>
+    </view>
+  </view>
+    <view>
+      <text data-id="2" bindtap="getVerificationCode">{{contantTxt}}</text>
+    </view>
+  <view class="inputbox">
+    <view class="inptxt">请选择登录身份</view>
+    <view class="inpbox">
+      <radio-group bindchange="radioChange_identity" class="inp radiogroup">
+        <view class="radiobox_identity" wx:for="{{identity}}" wx:key="value">
+          <radio value="{{item.id}}" color="#ff0000" checked="{{item.checked}}" />
+          <view class="radiotxt">{{item.value}}</view>
+        </view>
+      </radio-group>
+    </view>
+  </view>
+
+  <view id="next" class="click" bindtap="registnext">登录</view>
+</view>

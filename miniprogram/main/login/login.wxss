@@ -1,1 +1,211 @@
-/* main/login/login.wxss */
+/* pages/login/login.wxss */
+
+page {
+  left: 30rpx;
+  right: 30rpx;
+  background-color: white;
+}
+
+.login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logintext {
+  font-size: x-small;
+  width: 40%;
+  height: 30rpx;
+  margin: auto;
+}
+
+.title {
+  color: #4AA27F;
+  width:60%;
+  font-size: 60rpx;
+  margin-left: 10%;
+  font-weight: bold;
+  margin-top:40rpx;
+  margin-bottom: 20rpx;
+}
+
+.input {
+  width: 60%;
+  height: 80rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 10%;
+  margin-right: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  border-radius: 40rpx;
+}
+
+.holders {
+  font-size: 35rpx;
+  color: #a5d6a9;
+
+}
+
+.textinputs {
+  line-height: 100rpx;
+  font-size: 35rpx;
+  color: #7C6048;
+  margin: auto;
+  margin-left: 20rpx;
+  width: 90%;
+}
+
+.click {
+  width: 60%;
+  height: 90rpx;
+  line-height: 80rpx;
+  margin: auto;
+  margin-top: 10%;
+  background-color: #626850;
+  text-align: center;
+  color: white;
+  font-size: 40rpx;
+  border-radius: 20rpx;
+}
+
+.inputbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  height: 80rpx;
+  margin-top: 40rpx;
+  margin-bottom: 25rpx;
+  margin-left: 10%;
+  line-height: 80rpx;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: 32rpx;
+  color: #353535;
+  background-color: whitesmoke;
+  border-radius: 40rpx;
+}
+
+.inptxt {
+  white-space: nowrap;
+  color: #4AA27F;
+  font-size: 35rpx;
+  margin-left: 3%;
+}
+
+.inpbox {
+  width: 100%;
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.inp {
+  position: relative;
+  width: 100%;
+  height: 80rpx;
+}
+
+.telinpbox {
+  width: 240rpx;
+  height: 52rpx;
+  overflow: hidden;
+  margin-top: 10rpx;
+}
+
+.telinp {
+  width: 55rpx;
+  height: 55rpx;
+  overflow: hidden;
+  margin-left: 25rpx;
+}
+
+.radiogroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.radiobox_sex {
+  display: flex;
+  flex-direction: row;
+  margin-left: 30rpx;
+}
+
+.radiobox_identity {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rpx;
+}
+
+.radiotxt {
+  font-size: 30rpx;
+}
+
+/*获取验证码*/
+
+.codeBox {
+  /* 最外层的盒子 */
+  margin: 20rpx;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.codeBox view:first-child {
+  /* input框外层盒子的样式 */
+  width: 80%;
+}
+
+.codeBox view:last-child {
+  /* 按钮外层盒子的样式 */
+  width: 40%;
+  box-shadow: 0rpx 6rpx 16rpx 0rpx rgba(0, 0, 0, 0.16);
+  border: 1px solid rgb(196, 210, 236);
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #626850;
+  border-top-right-radius: 60rpx;
+  border-bottom-right-radius: 60rpx;
+  color: white;
+}
+
+button {
+  /* 按钮本身的样式 */
+  background: #626850;
+  width: 120rpx;
+  height: 150rpx;
+  display: flex;
+  justify-content: center;
+}
+
+button::after {
+  /* 去掉按钮点击自带的效果 */
+  border: none;
+}
+
+button:hover {
+  /* 去掉按钮触摸自带的效果 */
+  background: none;
+}
+
+.inputcode {
+  width: 80%;
+  height: 80rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 8%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  border-top-left-radius: 40rpx;
+  border-bottom-left-radius: 40rpx;
+}

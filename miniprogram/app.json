@@ -2,10 +2,11 @@
     "pages": [
         "main/enroll/enroll",
         "main/login/login",
+        "main/leveltest/leveltest",
+        "main/levelgenerate/levelgenerate",
         "main/home/home",
         "main/englishsquare/square",
         "main/mess/mess",
-
         "main/setting/setting",
         "main/pasaword/pasaword",
         "main/name/name",
