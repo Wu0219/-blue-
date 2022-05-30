@@ -1,5 +1,7 @@
 {
     "pages": [
+        "main/enroll/enroll",
+        "main/login/login",
         "main/home/home",
         "main/englishsquare/square",
         "main/mess/mess",
