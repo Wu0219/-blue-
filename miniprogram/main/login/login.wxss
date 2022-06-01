@@ -130,12 +130,6 @@ page {
   flex-direction: row;
 }
 
-.radiobox_sex {
-  display: flex;
-  flex-direction: row;
-  margin-left: 30rpx;
-}
-
 .radiobox_identity {
   display: flex;
   flex-direction: row;

@@ -14,6 +14,9 @@ App({
       });
     }
 
-    this.globalData = {};
+    this.globalData = { };
+  },
+  globalData:{
+    grade:0
   }
 });

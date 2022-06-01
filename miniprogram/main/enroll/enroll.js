@@ -64,8 +64,8 @@ Page({
     this.data.username = e.detail.value
   },
   goback: function (e) {
-    wx.navigateBack({
-      delta: 1
+    wx.redirectTo({
+      url: '/main/login/login',
     })
   },
   registnext: function (e) {

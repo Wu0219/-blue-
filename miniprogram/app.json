@@ -1,7 +1,7 @@
 {
     "pages": [
-        "main/enroll/enroll",
         "main/login/login",
+        "main/enroll/enroll",
         "main/leveltest/leveltest",
         "main/levelgenerate/levelgenerate",
         "main/home/home",
