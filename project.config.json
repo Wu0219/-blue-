@@ -1,78 +1,50 @@
 {
+    "appid": "wx7af73532035ed354",
+    "compileType": "miniprogram",
+    "libVersion": "2.24.3",
     "miniprogramRoot": "miniprogram/",
+    "srcMiniprogramRoot": "miniprogram/",
     "cloudfunctionRoot": "cloudfunctions/",
+    "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+    "packOptions": {
+        "ignore": [],
+        "include": []
+    },
     "setting": {
         "urlCheck": true,
-        "es6": false,
-        "enhance": true,
-        "postcss": true,
-        "preloadBackgroundData": false,
-        "minified": true,
-        "newFeature": false,
         "coverView": true,
-        "nodeModules": false,
-        "autoAudits": false,
-        "showShadowRootInWxmlPanel": true,
-        "scopeDataCheck": false,
-        "uglifyFileName": false,
-        "checkInvalidKey": true,
-        "checkSiteMap": true,
-        "uploadWithSourceMap": true,
+        "es6": false,
+        "postcss": true,
         "compileHotReLoad": false,
         "lazyloadPlaceholderEnable": false,
+        "preloadBackgroundData": false,
+        "minified": true,
+        "autoAudits": false,
+        "uglifyFileName": false,
+        "uploadWithSourceMap": true,
+        "useIsolateContext": true,
+        "enhance": true,
         "useMultiFrameRuntime": true,
+        "showShadowRootInWxmlPanel": true,
+        "packNpmManually": false,
+        "packNpmRelationList": [],
+        "minifyWXSS": true,
+        "disableUseStrict": false,
+        "ignoreUploadUnusedFiles": true,
+        "minifyWXML": true,
+        "checkInvalidKey": true,
         "babelSetting": {
             "ignore": [],
             "disablePlugins": [],
             "outputPath": ""
         },
-        "useIsolateContext": true,
-        "userConfirmedBundleSwitch": false,
-        "packNpmManually": false,
-        "packNpmRelationList": [],
-        "minifyWXSS": true,
-        "disableUseStrict": false,
-        "minifyWXML": true,
+        "useStaticServer": true,
         "showES6CompileOption": false,
-        "useCompilerPlugins": false,
-        "ignoreUploadUnusedFiles": true,
-        "useStaticServer": true
+        "useCompilerPlugins": false
     },
-    "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
-    "condition": {
-        "search": {
-            "list": []
-        },
-        "conversation": {
-            "list": []
-        },
-        "plugin": {
-            "list": []
-        },
-        "game": {
-            "list": []
-        },
-        "miniprogram": {
-            "list": [
-                {
-                    "id": -1,
-                    "name": "db guide",
-                    "pathName": "pages/databaseGuide/databaseGuide"
-                }
-            ]
-        }
-    },
-    "compileType": "miniprogram",
     "editorSetting": {
         "tabIndent": "insertSpaces",
         "tabSize": 4
     },
-    "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
-    "srcMiniprogramRoot": "miniprogram/",
-    "libVersion": "2.24.3",
-    "packOptions": {
-        "ignore": [],
-        "include": []
-    },
-    "appid": "wx7af73532035ed354"
+    "description": "项目配置文件，详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html"
 }

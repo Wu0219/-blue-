@@ -9,6 +9,13 @@
                     "query": "id=0&title=我的收藏",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "main/home/home",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }

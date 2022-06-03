@@ -1,0 +1,25 @@
+/* main/leveltest/leveltest.wxss */
+.quest_container {
+  padding: 20rpx;
+}
+
+.item {
+  margin-top: 10rpx;
+}
+
+.active {
+  color:#DF9274;
+}
+
+.submit_btn {
+  width: 60%;
+  height: 90rpx;
+  line-height: 80rpx;
+  margin: auto;
+  margin-top: 10%;
+  background-color: #626850;
+  text-align: center;
+  color: white;
+  font-size: 40rpx;
+  border-radius: 20rpx;
+}
