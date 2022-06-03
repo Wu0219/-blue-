@@ -16,6 +16,20 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "main/enroll/enroll",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "main/englishsquare/square",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }
