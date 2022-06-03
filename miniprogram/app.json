@@ -1,14 +1,14 @@
 {
     "pages": [
         "main/home/home",
+
         "main/englishsquare/square",
         "main/mess/mess",
-
+        
         "main/setting/setting",
         "main/pasaword/pasaword",
         "main/name/name",
-        "main/collect/collect",
-        "main/deliver/deliver",
+        "main/collectOrDel/collectOrDel",
         "pages/index/index",
         "pages/getOpenId/index",
         "pages/getMiniProgramCode/index",

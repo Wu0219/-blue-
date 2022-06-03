@@ -1,4 +1,4 @@
-// main/collect/collect.js
+// main/enroll/enroll.js
 Page({
 
     /**

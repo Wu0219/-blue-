@@ -1,2 +1,5 @@
 <!--main/pasaword/pasaword.wxml-->
 <text>main/pasaword/pasaword.wxml</text>
+
+
+<button  type="primary" bindtap="goToSet" style="background-color: #429574 ;">确定</button>
