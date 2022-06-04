@@ -10,8 +10,7 @@
         "main/mess/mess",
         
         "main/setting/setting",
-        "main/pasaword/pasaword",
-        "main/name/name",
+        "main/pasawordOrName/pasawordpasawordOrName",
         "main/collectOrDel/collectOrDel",
         "pages/index/index",
         "pages/getOpenId/index",

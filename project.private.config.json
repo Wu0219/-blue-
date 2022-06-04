@@ -5,8 +5,8 @@
             "list": [
                 {
                     "name": "",
-                    "pathName": "main/collectOrDel/collectOrDel",
-                    "query": "id=0&title=我的收藏",
+                    "pathName": "main/setting/setting",
+                    "query": "",
                     "launchMode": "default",
                     "scene": null
                 },
@@ -27,6 +27,13 @@
                 {
                     "name": "",
                     "pathName": "main/englishsquare/square",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "main/leveltest/leveltest",
                     "query": "",
                     "launchMode": "default",
                     "scene": null
