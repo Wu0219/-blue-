@@ -1,5 +1,5 @@
 // main/levelgenerate/levelgenerate.js
-const app = getApp();
+var app = getApp();
 Page({
 
   /**
@@ -41,7 +41,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      level:app.globalData.grade
+      levels:app.globalData.grade
     })
   },
 

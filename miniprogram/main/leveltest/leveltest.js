@@ -1,4 +1,5 @@
 // main/leveltest/leveltest.js
+var app=getApp();
 Page({
 
   /**
@@ -77,7 +78,6 @@ Page({
 
 // 点击提交按钮
 submit() {
-  const app=getApp();
   let {
     quest
   } = this.data;

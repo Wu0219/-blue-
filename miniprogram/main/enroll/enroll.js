@@ -1,5 +1,5 @@
 // main/enroll/enroll.js
-var app = getApp(); //获取应用实例
+var app = getApp(); 
 var countDown = null; //自定义一个倒计时的函数
 Page({
 
@@ -121,32 +121,43 @@ Page({
           showCancel: false,
           success(res) {}
         })
-      }
-      const identity = that.data.identity
-      var flag2 = 0
-      for (let i = 0, len = identity.length; i < len; ++i) {
-        if (identity[i].checked == true) {
-          flag2 = 1
+      } else {
+        const identity = that.data.identity
+        var flag2 = 0
+        for (let i = 0, len = identity.length; i < len; ++i) {
+          if (identity[i].checked == true) {
+            flag2 = 1
+          }
+        }
+        if (flag2 == 0) {
+          wx.showModal({
+            title: '提示',
+            content: '请选择注册身份',
+            showCancel: false,
+            success(res) {}
+          })
+        } else {
+          app.globalData.phonenumber=that.data.phonenumber;
+          app.globalData.username=that.data.username;
+          if(that.data.sex[0].checked==true){
+            app.globalData.gender="男"
+          }
+          else if(that.data.sex[1].checked==true){
+            app.globalData.gender="女"
+          }
+          if (that.data.identity[0].checked == true) {
+            app.globalData.identity="用户"
+            wx.redirectTo({
+              url: '/main/levelgenerate/levelgenerate',
+            })
+          } else {
+            app.globalData.identity="志愿者"
+            wx.redirectTo({
+              url: '/main/leveltest/leveltest',
+            })
+          }
         }
       }
-      if (flag2 == 0) {
-        wx.showModal({
-          title: '提示',
-          content: '请选择注册身份',
-          showCancel: false,
-          success(res) {}
-        })
-      }
-    } 
-    if(that.data.identity[0].checked==true){
-      wx.redirectTo({
-        url: '/main/levelgenerate/levelgenerate',
-      })
-    }
-    else{
-      wx.redirectTo({
-        url: '/main/leveltest/leveltest',
-      })
     }
   },
   radioChange_sex: function (e) {
