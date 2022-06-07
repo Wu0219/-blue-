@@ -1,4 +1,4 @@
-// main/setting/setting.js
+// main/pasaword/pasaword.js
 Page({
 
     /**

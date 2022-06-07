@@ -1,4 +1,4 @@
-// main/setting/setting.js
+// main/deliver/deliver.js
 Page({
 
     /**

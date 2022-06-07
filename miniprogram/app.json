@@ -1,15 +1,22 @@
 {
     "pages": [
-        "main/login/login",
-        "main/enroll/enroll",
-        "main/leveltest/leveltest",
-        "main/levelgenerate/levelgenerate",
-        "main/home/home",
         "main/englishsquare/square",
+        "main/englishsquare/bigTree/bigTree",
+        "main/englishsquare/englishCorner/englishCorner",
+        "main/englishsquare/selfLearningRoom/selfLearningRoom",
+        "main/englishsquare/bookStore/bookStore",
+        "main/englishsquare/shop/shop",
+        "main/enroll/enroll",
+        "main/login/login",
+        "main/home/home",
+       
         "main/mess/mess",
+
         "main/setting/setting",
-        "main/pasawordOrName/pasawordpasawordOrName",
-        "main/collectOrDel/collectOrDel",
+        "main/pasaword/pasaword",
+        "main/name/name",
+        "main/collect/collect",
+        "main/deliver/deliver",
         "pages/index/index",
         "pages/getOpenId/index",
         "pages/getMiniProgramCode/index",
@@ -34,11 +41,12 @@
     },
     "tabBar": {
         "list": [
+          
             {
                 "pagePath": "main/englishsquare/square",
                 "text": "英语广场",
                 "iconPath": "/images/square.png",
-                "selectedIconPath": "/images/square-act.png"
+                "selectedIconPath": "/images/square-act.png"                
             },
             {
                 "pagePath": "main/mess/mess",

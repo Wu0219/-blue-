@@ -1,9 +1,0 @@
-<!--main/levelgenerate/levelgenerate.wxml-->
-<view class="imagesize">
-  <image mode="aspectFill" class='congrats' src='/images/yes.png'></image>
-  <text class="complete">恭喜您完成水平测试!</text>
-  <view class="grades">您的等级为：lv{{levels}}</view>
-  <view class='countDown'>
-  <text style='color:#DF9274'>{{countDownNum}}</text>
-  秒后跳转至英语广场</view>
-</view>

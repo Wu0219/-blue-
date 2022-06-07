@@ -1,4 +1,4 @@
-// main/setting/setting.js
+// main/name/name.js
 Page({
 
     /**

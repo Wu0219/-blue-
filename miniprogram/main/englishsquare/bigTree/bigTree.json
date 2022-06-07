@@ -1,0 +1,27 @@
+{
+  "usingComponents": {"tabBar": true},
+  "tabBar": {
+    "list": [
+        {
+            "pagePath": "main/englishsquare/square",
+            "text": "英语广场",
+            "iconPath": "../../../images/square.png",
+            "selectedIconPath": "../../../images/square-act.png"                
+        },
+        {
+            "pagePath": "main/mess/mess",
+            "text": "消息",
+            "iconPath": "../../../images/message.png",
+            "selectedIconPath": "../../../images/message-act.png"
+        },
+        {
+            "pagePath": "main/home/home",
+            "text": "我的",
+            "iconPath": "../../../images/mine.png",
+            "selectedIconPath": "../../../images/mine-act.png"
+        }
+    ],
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
+}

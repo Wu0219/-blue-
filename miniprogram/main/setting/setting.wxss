@@ -1,14 +1,1 @@
 /* main/setting/setting.wxss */
-@import "/main/home/home.wxss";
-
-.set-ite-plu {
-    border-bottom:1px solid #BBBBBB;
-    border-top:1px solid #BBBBBB;
-    border-collapse: collapse;
-    width: 100%;
-    height: 88rpx;
-    display: flex;
-    align-items: center;
-    font-size:18px;
-    font-weight: 450;
-}

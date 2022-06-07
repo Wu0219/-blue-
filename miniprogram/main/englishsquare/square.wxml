@@ -2,30 +2,30 @@
 <view class="squaremain">
     <view class="content">
         <view id="bigTree">
-            <text>大榕树</text>
+            <navigator url='./bigTree/bigTree'>大榕树</navigator>
         </view>
 
         <view id="englishCorner">
-            <text>英语角</text>
+            <navigator url='./englishCorner/englishCorner'>英语角</navigator>
         </view>
 
         <view id="selfLearningRoom">
-            <text>自习室</text>
+            <navigator url='./selfLearningRoom/selfLearningRoom'>自习室</navigator>
         </view>
 
         <view id="bookStore">
-            <text>小书摊</text>
+            <navigator url='./bookStore/bookStore'>小书摊</navigator>
         </view>
 
         <view id="shop">
-            <text>商店</text>
+            <navigator url='./shop/shop'>商店</navigator>
         </view>
 
     </view>
 
 </view>
 
-<page-meta>
+<!-- <page-meta>
   <navigation-bar/>
-</page-meta>
+</page-meta> -->
 

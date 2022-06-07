@@ -14,13 +14,6 @@ App({
       });
     }
 
-    this.globalData = { };
-  },
-  globalData:{
-    grade:0,
-    username:"",
-    identity:"",
-    gender:"",
-    phonenumber:0,
+    this.globalData = {};
   }
 });

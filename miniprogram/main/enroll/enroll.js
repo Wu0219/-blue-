@@ -1,5 +1,5 @@
 // main/enroll/enroll.js
-var app = getApp(); 
+var app = getApp(); //获取应用实例
 var countDown = null; //自定义一个倒计时的函数
 Page({
 
@@ -7,9 +7,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    phonenumber: "",
-    verifycode: "",
-    username: "",
     sex: [{
       id: 1,
       value: '男'
@@ -54,112 +51,62 @@ Page({
     countTime: 60 //倒计时的时间
   },
 
-  userphoneinput: function (e) {
-    this.data.phonenumber = e.detail.value
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+
   },
-  verifycodeinput: function (e) {
-    this.data.verifycode = e.detail.value
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady: function () {
+
   },
-  usernameinput: function (e) {
-    this.data.username = e.detail.value
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+
   },
-  goback: function (e) {
-    wx.redirectTo({
-      url: '/main/login/login',
-    })
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide: function () {
+
   },
-  registnext: function (e) {
-    var that = this;
-    var myreg = /^(13[0-9]|14[01456879]|15[0-35-9]|16[2567]|17[0-8]|18[0-9]|19[0-35-9])\d{8}$/;
-    if (that.data.phonenumber == "") {
-      wx.showModal({
-        title: '提示',
-        content: '请输入手机号',
-        showCancel: false,
-        success(res) {}
-      })
-    } else if (that.data.verifycode == "") {
-      wx.showModal({
-        title: '提示',
-        content: '请输入验证码',
-        showCancel: false,
-        success(res) {}
-      })
-    } else if (that.data.username == "") {
-      wx.showModal({
-        title: '提示',
-        content: '请输入用户名',
-        showCancel: false,
-        success(res) {}
-      })
-    } else if (that.data.phonenumber.length != 11) {
-      wx.showModal({
-        title: '提示',
-        content: '手机号长度有误',
-        showCancel: false,
-        success(res) {}
-      })
-    } else if (!myreg.test(that.data.phonenumber)) {
-      wx.showModal({
-        title: '提示',
-        content: '请输入正确的手机号',
-        showCancel: false,
-        success(res) {}
-      })
-    } else {
-      const sex = that.data.sex
-      var flag1 = 0
-      for (let i = 0, len = sex.length; i < len; ++i) {
-        if (sex[i].checked == true) {
-          flag1 = 1
-        }
-      }
-      if (flag1 == 0) {
-        wx.showModal({
-          title: '提示',
-          content: '请选择性别',
-          showCancel: false,
-          success(res) {}
-        })
-      } else {
-        const identity = that.data.identity
-        var flag2 = 0
-        for (let i = 0, len = identity.length; i < len; ++i) {
-          if (identity[i].checked == true) {
-            flag2 = 1
-          }
-        }
-        if (flag2 == 0) {
-          wx.showModal({
-            title: '提示',
-            content: '请选择注册身份',
-            showCancel: false,
-            success(res) {}
-          })
-        } else {
-          app.globalData.phonenumber=that.data.phonenumber;
-          app.globalData.username=that.data.username;
-          if(that.data.sex[0].checked==true){
-            app.globalData.gender="男"
-          }
-          else if(that.data.sex[1].checked==true){
-            app.globalData.gender="女"
-          }
-          if (that.data.identity[0].checked == true) {
-            app.globalData.identity="用户"
-            wx.redirectTo({
-              url: '/main/levelgenerate/levelgenerate',
-            })
-          } else {
-            app.globalData.identity="志愿者"
-            wx.redirectTo({
-              url: '/main/leveltest/leveltest',
-            })
-          }
-        }
-      }
-    }
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload: function () {
+
   },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh: function () {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+
+  },
+
   radioChange_sex: function (e) {
     // console.log('radio发生change事件，携带value值为：', e.detail.value)
     const sex = this.data.sex
@@ -295,7 +242,7 @@ Page({
 
   // 按钮事件
   getVerificationCode() {
-    var that = this;
+    var that = this; 
     var countTime = that.data.countTime
     // setInterval() 方法可按照指定的周期（以毫秒计）来调用函数或计算表达式，简单来说就是定时执行
     countDown = setInterval(function () {
@@ -314,60 +261,5 @@ Page({
         })
       }
     }, 1000)
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
   }
 })
