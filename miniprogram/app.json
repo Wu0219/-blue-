@@ -1,5 +1,7 @@
 {
     "pages": [
+        "main/pass/pass",
+        "main/name/name",
         "main/login/login",
         "main/enroll/enroll",
         "main/leveltest/leveltest",
@@ -10,7 +12,6 @@
         "main/mess/mess",
         
         "main/setting/setting",
-        "main/pasawordOrName/pasawordpasawordOrName",
         "main/collectOrDel/collectOrDel",
         "pages/index/index",
         "pages/getOpenId/index",

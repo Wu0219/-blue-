@@ -1,29 +1,39 @@
-// main/pasawordOrName/pasawordpasawordOrName.js
+// main/pass/pass.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        query: {}
+       text:[{
+           Text:"请输入初始密码"
+       },{
+        Text:"请输入新密码"
+       },{
+        Text:"请重复新密码"
+       }
+      ]
     },
+//点击确定后的跳转函数
+    bind() {
+        wx.navigateTo({
+          url: '/main/setting/setting',
+        })
 
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-       this.setData({
-           query:options
-       })
+
     },
+
 
     /**
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady() {
-       wx.setNavigationBarTitle({
-         title: this.data.query.text
-       })
+
     },
 
     /**

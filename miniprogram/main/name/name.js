@@ -1,17 +1,11 @@
-// main/setting/setting.js
+// main/name/name.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        settingFor: [{
-            id:0,
-            text :"密码",
-        }, {
-            id:1,//这里应该写key:value! 为：
-            text: "昵称",
-        }]
+
     },
 
     /**

@@ -1,0 +1,6 @@
+<!--main/name/name.wxml-->
+<!--main/pasawordOrName/pasawordpasawordOrName.wxml-->
+<view class="page-section">
+    <input  class="input" placeholder="请输入新昵称" ></input>
+</view>
+<button type="primary" style="background-color: #429574;" bindtap="sure" bindtap="bind" >确定</button>

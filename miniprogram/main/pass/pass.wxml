@@ -1,0 +1,8 @@
+<!--main/pass/pass.wxml-->
+<view class="page-section" >
+   <view class="input" wx:for="{{text}}">
+    <input placeholder="{{item.Text}}" ></input>
+   </view>
+</view>
+<text class="text2">注意:密码必须由8-16位字符构成</text>
+<button type="primary" style="background-color: #429574;" bindtap="sure" bindtap="bind" >确定</button>

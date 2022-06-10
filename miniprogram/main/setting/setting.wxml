@@ -1,8 +1,7 @@
 <!--main/setting/setting.wxml-->
 <view class="setting">
-        <navigator wx:for="{{settingFor}}" wx:key="index" class="setting-item" 
-        url="/main/pasawordOrName/pasawordpasawordOrName?id={{item.id}}&title={{item.text}}">
-            <text>{{item.text}}</text>
-        </navigator>
+        <navigator url="/main/pass/pass" class="set-ite-plu">修改密码</navigator>
+        <navigator url="/main/name/name" class="set-ite-plu">修改昵称</navigator>
         <navigator url="/main/leveltest/leveltest" class="set-ite-plu" >修改等级更新</navigator>
     </view>
+    
