@@ -40,7 +40,7 @@ page{
     margin-top: 4vh;
 }
 
-.squaremain .content text{
+.squaremain .content navigator{
     display: flex;
     justify-content:center;
     align-items:center;

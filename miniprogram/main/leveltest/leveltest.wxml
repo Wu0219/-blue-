@@ -1,9 +1,2 @@
 <!--main/leveltest/leveltest.wxml-->
-<view class='quest_container' wx:for="{{quest}}" wx:key="id" wx:for-index="outterIndex">
-  <text>{{item.question}}</text>
-  <view wx:for="{{item.answers}}" wx:key="content" bindtap="answerSelected" data-outidx='{{outterIndex}}' data-idx="{{index}}" class="item {{item.selected?'active':''}}">
-    <text>{{item.index}}.</text>
-    <text> {{item.content}}</text>
-  </view>
-</view>
-<view class="submit_btn" bindtap="submit">提交</view>
+<text>main/leveltest/leveltest.wxml</text>

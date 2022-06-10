@@ -1,41 +1,5 @@
 /* main/home/home.wxss */
-.container {
+container {
     background-color: white;
-    width:750rpx;
-    height:456rpx;
-}
-
-.setting {
-   background-color: white;
-   display: flex;
-   flex-direction:column;
-   align-items: center;
-   border-top:100rpx solid #f6f6f6;
-}
-
-.top {
-    border-top:1px solid #BBBBBB;
-    border-collapse: collapse;
-    width: 100%;
-    height: 88rpx;
-    display: flex;
-    align-items: center;
-}
-.setting-item {
-    border-bottom:1px solid #BBBBBB;
-    border-top:1px solid #BBBBBB;
-    width: 100%;
-    height: 88rpx;
-    display: flex;
-    align-items: center;
-}
-
-.setting image {
-    width: 40rpx;
-    height: 40rpx;
-    margin-left: 10rpx;
-}
-.setting text {
-    font-size:18px;
-    font-weight: 450;
+    padding: 750rpx;
 }

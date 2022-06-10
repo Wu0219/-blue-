@@ -1,4 +1,4 @@
-// main/mess/mess.js
+// main/pasaword/pasaword.js
 Page({
 
     /**
