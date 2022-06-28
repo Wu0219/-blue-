@@ -1,6 +1,8 @@
 // main/login/login.js
 var app = getApp(); //获取应用实例
 var countDown = null; //自定义一个倒计时的函数
+const db = wx.cloud.database();
+const userenroll = db.collection('userenroll');
 Page({
 
   /**
@@ -16,6 +18,7 @@ Page({
       id: 2,
       value: '志愿者'
     }],
+    identitychose:"",
     contantTxt: '发送验证码', //按钮中展示的内容
     countTime: 60 //倒计时的时间
   },
@@ -68,6 +71,12 @@ Page({
       for (let i = 0, len = identity.length; i < len; ++i) {
         if (identity[i].checked == true) {
           flag2 = 1
+          if(i==0){
+            that.data.identitychose="用户"
+          }
+          else{
+            that.data.identitychose="志愿者"
+          }
         }
       }
       if (flag2 == 0) {
@@ -78,8 +87,28 @@ Page({
           success(res) {}
         })
       } else {
-        wx.reLaunch({
-          url: '/main/englishsquare/square',
+        //console.log(that.data.phonenumber, that.data.identitychose);
+        db.collection('userenroll').where({
+          phonenumber:that.data.phonenumber,
+          identity: that.data.identitychose
+        })
+        .get({
+          success(res) {
+            // res.data 是包含以上记录的数组
+            console.log(res.data)
+            if(res.data.length==0){
+              wx.showModal({
+                title: '提示',
+                content: '未查询到用户信息，请先注册',
+                showCancel: false,
+              })
+            }
+            else{
+              wx.reLaunch({
+                url: '/main/englishsquare/square',
+              })
+            }
+          }
         })
       }
     }

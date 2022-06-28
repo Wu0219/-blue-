@@ -1,10 +1,7 @@
 // main/enroll/enroll.js
 var app = getApp();
 var countDown = null; //自定义一个倒计时的函数
-const db = wx.cloud.database();
-const userenroll = db.collection('userenroll');
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -12,6 +9,7 @@ Page({
     phonenumber: "",
     username: "",
     verifycode: "",
+    grade:0,
     sex: [{
       id: 1,
       value: '男'
@@ -148,28 +146,13 @@ Page({
           }
           if (that.data.identity[0].checked == true) {
             app.globalData.identity = "用户"
-          } else {
-            app.globalData.identity = "志愿者"
-          }
-          var Data = {
-            username: app.globalData.username,
-            identity: app.globalData.identity,
-            gender: app.globalData.gender,
-            phonenumber: app.globalData.phonenumber,
-            year:app.globalData.year
-          };
-          db.collection('userenroll').add({
-            data: Data,
-            success: function (res) {
-              // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
-              console.log(res)
-            }
-          })
-          if (that.data.identity[0].checked == true) {
+            app.globalData.grade = 0
             wx.redirectTo({
               url: '/main/levelgenerate/levelgenerate',
             })
           } else {
+            app.globalData.identity = "志愿者"
+            app.globalData.grade = 0
             wx.redirectTo({
               url: '/main/leveltest/leveltest',
             })

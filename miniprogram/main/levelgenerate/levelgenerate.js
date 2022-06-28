@@ -1,5 +1,7 @@
 // main/levelgenerate/levelgenerate.js
 var app = getApp();
+const db = wx.cloud.database();
+const userenroll = db.collection('userenroll');
 Page({
 
   /**
@@ -42,6 +44,21 @@ Page({
   onLoad: function (options) {
     this.setData({
       levels:app.globalData.grade
+    })
+    var Data = {
+      username: app.globalData.username,
+      identity: app.globalData.identity,
+      gender: app.globalData.gender,
+      phonenumber: app.globalData.phonenumber,
+      year:app.globalData.year,
+      level:app.globalData.grade
+    };
+    db.collection('userenroll').add({
+      data: Data,
+      success: function (res) {
+        // res 是一个对象，其中有 _id 字段标记刚创建的记录的 id
+        console.log(res)
+      }
     })
   },
 
