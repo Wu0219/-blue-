@@ -1,21 +1,19 @@
 {
     "pages": [
-        "main/pass/pass",
         "main/name/name",
-        "main/leveltest/leveltest",
-        "main/levelgenerate/levelgenerate",
         "main/englishsquare/square",
         "main/englishsquare/bigTree/bigTree",
         "main/englishsquare/englishCorner/englishCorner",
         "main/englishsquare/selfLearningRoom/selfLearningRoom",
         "main/englishsquare/bookStore/bookStore",
         "main/englishsquare/shop/shop",
+        "main/home/home",
         "main/enroll/enroll",
         "main/login/login",
-        "main/home/home",
-       
+        "main/leveltest/leveltest",
+        "main/levelgenerate/levelgenerate",
         "main/mess/mess",
-
+        "main/pass/pass",
         "main/setting/setting",
         "main/collectOrDel/collectOrDel",
         "pages/index/index",

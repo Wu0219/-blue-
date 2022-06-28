@@ -1,4 +1,4 @@
-/* pages/enroll/enroll.wxss */
+/* pages/enroll/enroll.wxss */
 
 page {
   left: 30rpx;
@@ -10,23 +10,24 @@ page {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logintext {
-  font-size: xx-small;
+  font-size: x-small;
   width: 40%;
   height: 30rpx;
   margin: auto;
-  margin-top: 5rpx;
-  margin-left: 150rpx;
-  margin-bottom: 100rpx;
 }
 
 .title {
   color: #4AA27F;
-  font-size: x-large;
+  width:60%;
+  font-size: 60rpx;
   margin-left: 10%;
   font-weight: bold;
+  margin-top:40rpx;
+  margin-bottom: 20rpx;
 }
 
 .input {
@@ -161,7 +162,6 @@ page {
   width: 60%;
   margin-left: 10%;
   margin-top: 20rpx;
-  margin-bottom: 20rpx;
   display: inline-block;
 }
 
@@ -186,11 +186,11 @@ page {
 
 .menu-nav2 image {
   width: 24rpx;
-  height: 15rpx;
+  height: 25rpx;
 }
 
 .menu-nav text {
-  font-size: 14px;
+  font-size: 35rpx;
 }
 
 .menu-nav image {
@@ -200,7 +200,7 @@ page {
 
 .menu-nav text {
   color: #4AA27F;
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 5rpx;
 }
 
